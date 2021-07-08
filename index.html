@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <!-- VIDEO -->
+            <video 
+                id="video"
+                poster="./images/sintel-poster.jpg"
+                src="https://media.w3.org/2010/05/sintel/trailer.mp4" 
+                width="250"
+            ></video>
+
+            <div class="player-overlay">
+                <!-- TITLE -->
+                <h2 class="player-title">Música para programar</h2>
+    
+                <!-- BUTTONS -->
+                <div class="player-actions">
+                    <button 
+                        aria-label="Retroceder 10 segundos" 
+                        class="button" 
+                        id="backward"
+                        title="Retroceder 10 segundos" 
+                    ></button>
+                    <button 
+                        aria-label="Reproducir" 
+                        class="button" 
+                        id="play"
+                        title="Reproducir" 
+                    ></button>
+                    <button 
+                        aria-label="Pausar" 
+                        class="button" 
+                        hidden 
+                        id="pause"
+                        title="Pausar" 
+                    ></button>
+                    <button 
+                        aria-label="Adelantar 10 segundos" 
+                        class="button" 
+                        id="forward"
+                        title="Adelantar 10 segundos" 
+                    ></button>
+                </div>
+                
+                <!-- PROGRESS -->
+                <div class="player-progress">
+                    <input 
+                        id="progress" 
+                        min="0"
+                        name="progress"
+                        step="1"
+                        type="range"
+                        value="0"
+                    >
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
